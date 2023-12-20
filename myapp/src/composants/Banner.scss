@@ -1,0 +1,42 @@
+.banner {
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 4%;
+}
+
+.banner1 {
+    width: 100%;
+    height: 223px;
+    top: 171px;
+    left: 100px;
+    border-radius: 1rem;
+    object-fit: cover;
+    @media screen and (width <= 375px) {
+        width: 335px;
+        height: 111px;
+       
+        object-fit: none;
+    }
+}
+
+.marge {
+    top: 180px;
+    position: absolute;
+    text-align: center;
+    color: white;
+
+    @media screen and (width <= 400px) {
+        width: 41%;
+        margin-inline-start: 0.5rem;
+        margin-block-end: 0.5rem;
+        color: #FFFFFF;
+        position: absolute;
+        top: 95px;
+        font-size: large;
+        text-align: left;
+        left: 30px;
+    }
+}

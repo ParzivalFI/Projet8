@@ -1,0 +1,37 @@
+@use "../scss/variables.scss" as colors;
+
+.grid {
+  background-color: colors.$background-dark;
+  background-color: rgba(0, 0, 0, 0.119);
+  min-height: 50vh;
+  border-radius: 2rem;
+  display: flex;
+  gap: 44px;
+  padding: 4rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
+  & > * {
+    width: 100%;
+    max-width: 20rem;
+  }
+}
+
+.paddingg {
+  margin-left: 5%;
+  margin-right: 5%;
+  @media screen and (width <= 400px) {
+    margin-left: 1%;
+  
+
+}
+}
+
+@media screen and (width <= 768px) {
+  .grid {
+    justify-content: center;
+    background-color: colors.$grid-background-light;
+    padding: 0;
+  }
+}

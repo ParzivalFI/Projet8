@@ -1,0 +1,88 @@
+.apartement {
+    color: #ff6060;
+}
+
+.spantag {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(115px, 115px));
+    gap: 1rem;
+    span {
+        padding: 0.3em 1em;
+        border-radius: 1rem;
+        color: white;
+        background-color: #ff6060;
+        text-align: center;
+    }
+}
+
+.apartementHeader {
+    display: flex;
+}
+.spantag {
+    display: flex;
+    flex-grow: 1;
+}
+.pseudo {
+    display: flex;
+}
+.apartementBadge {
+    width: 32px;
+    height: 32px;
+    background-color: black;
+    border-radius: 50%;
+}
+.apartementEtoile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    * {
+        font-size: 1rem;
+    }
+    .on {
+        color: #ff6060;
+    }
+    .off {
+        color: gray;
+    }
+}
+.h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-block: 0;
+    font-weight: 400;
+}
+
+.description {
+    .p {
+        margin-block: 0;
+    }
+    .descri {
+        background-color: #ff6060;
+        color: white;
+        padding: 0.7rem;
+        border-radius: 0.7rem;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        i {
+            font-size: 2rem;
+            cursor: pointer;
+        }
+    }
+    .content {
+        background-color: #f6f6f6;
+        color: #ff6060;
+        position: relative;
+        top: -1rem;
+        z-index: -1;
+        margin-block: 0;
+        padding: 0.7rem;
+    }
+}
+
+.deux {
+    display: flex;
+    gap: 1rem;
+}
