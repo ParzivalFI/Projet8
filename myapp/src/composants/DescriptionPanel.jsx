@@ -7,11 +7,11 @@ export function DescriptionPanel(props) {
   const showContent = () => {
     setIsContentVisible(!isContentVisible);
   };
-  const contentClass = (isContentVisible ? "visible" : "hidden") + " description__content";
+  const contentClass = (isContentVisible ? "visible" : "hidden") + " descriptionContent";
   const chevronClass = (isContentVisible ? "fa-chevron-up" : "fa-chevron-down") + " fas";
   return (
-    <div className="description__panel">
-      <p className="description__header" onClick={showContent}>
+    <div className="descriptionPanel">
+      <p className="descriptionHeader" onClick={showContent}>
         <span>{props.title}</span>
         <i className={chevronClass}></i>
       </p>

@@ -6,27 +6,27 @@ export function ApartmentHeader({ logement }) {
   const [firstName, lastName] = name.split(" ");
 
   return (
-    <div className="apartment__header">
-      <div className="apartment__title">
+    <div className="appartementHeader">
+      <div className="appartementTitle">
         <h1>{logement.title}</h1>
         <h2>{logement.location}</h2>
-        <div className="apartment__tags">
+        <div className="appartementTags">
           {logement.tags.map((tag) => (
             <span key={tag}>{tag}</span>
           ))}
         </div>
       </div>
-      <div className="apartment__owner">
-        <div className="apartment__owner__details">
+      <div className="appartementOwner">
+        <div className="appartementOwnerDetails">
           <h3>
             <span>{firstName}</span>
             <span>{lastName}</span>
           </h3>
-          <div className="apartment__owner__badge">
+          <div className="appartementOwner__badge">
             <img src={logement.host.picture} alt="" />
           </div>
         </div>
-        <div className="apartment__owner__stars">
+        <div className="appartementEtoile">
           {[1, 2, 3, 4, 5].map((num) => (
             <span key={num} className={logement.rating >= num ? "on" : ""}>
               ★

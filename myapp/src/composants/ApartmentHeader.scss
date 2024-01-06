@@ -1,17 +1,17 @@
 @use "../scss/variables.scss" as *;
 
-.apartment__header {
+.appartementHeader {
   display: flex;
   margin-bottom: 2rem;
   gap: 1rem;
   @media screen and (width <= 768px) {
     flex-direction: column;
   }
-  .apartment__title {
+  .appartementTitle {
     flex-grow: 1;
     margin-left: 5%;
   }
-  .apartment__owner {
+  .appartementOwner {
     display: flex;
     flex-direction: column;
     margin-right: 6%;
@@ -22,20 +22,20 @@
       justify-content: space-between;
     }
   }
-  .apartment__owner__details {
+  .appartementOwnerDetails {
     display: flex;
     gap: 0.5rem;
     @media screen and (width <= 768px) {
       order: 1;
     }
   }
-  .apartment__owner__badge img {
+  .appartementOwner__badge img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
     background-color: $background-dark;
   }
-  .apartment__owner__stars {
+  .appartementEtoile {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,9 +61,10 @@
     margin-top: -7px;
     margin-bottom: 0.2em;
     font-size: 20px;
+    padding-block: 11px;
   }
 
-  .apartment__tags {
+  .appartementTags {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
     gap: 1rem;
